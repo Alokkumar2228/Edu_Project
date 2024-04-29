@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Signup Page</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.login-signup-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-signup-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-signup-form input[type="text"],
+.login-signup-form input[type="password"],
+.login-signup-form input[type="email"],
+.login-signup-form button {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-signup-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-signup-form p {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+  <div class="login-signup-container">
+    <form class="login-signup-form">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="#">Signup</a></p>
+    </form>
+    <form class="login-signup-form hidden">
+      <h2>Signup</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Signup</button>
+      <p>Already have an account? <a href="#">Login</a></p>
+    </form>
+  </div>
+</body>
+</html>
